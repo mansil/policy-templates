@@ -1,14 +1,14 @@
-**IMPORTANT**: These files are in active development along with the policies in Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
+**IMPORTANTE**: Estes ficheiros estão em desenvolvimento ativo em conjunto com as políticas no Firefox. Para obter a informação da política que correspondem a um lançamento específico, vá para https://github.com/mozilla/policy-templates/releases.
 
-Starting with Firefox 64 and Firefox ESR 60.4, Firefox supports configuration files on macOS.
+A partir da versão 64 do Firefox e do Firefox ESR 60.4, o Firefox suporta a configuração de ficheiros no macOS.
 
-An example plist file with all options is available here:
+Uma lista plist de exemplo com todas as opções está disponível aqui:
 
 https://github.com/mozilla/policy-templates/blob/master/mac/org.mozilla.firefox.plist
 
-If you want to set specific options from the command line, we also provide flattened shortcuts to any item that is nested in the plist file.
+Se deseja definir opções específicas a partir da linha de comandos, nós também fornecemos atalhos simplificados para qualquer item que esteja integrado no ficheiro plist.
 
-For example, this policy:
+Por exemplo, esta política:
 ```json
 {
   "policies": {
@@ -18,7 +18,7 @@ For example, this policy:
   }
 }
 ```
-which would be set in the plist file like this:
+que seria definida no ficheiro plist, tal como isto:
 ```plist
   <key>Homepage</key>
   <dict>
