@@ -26,10 +26,11 @@ que seria definida no ficheiro plist, tal como isto:
     <string>http://example.com</string>
   </dict>
 ```
-Correctly writing the nested value with the `defaults` command can be hard, so you can flatten the keys by separating them with `__`, like this:
+Corretamente, escrever o valor integrado com o comando `defaults` pode ser difícil, então pode simplificar as chaves separando-as com` __`, desta forma:
 ```bash
 sudo defaults write /Library/Preferences/org.mozilla.firefox Homepage__URL -string "http://example.com"
 ```
+Antes de quaisquer políticas de linha de comandos funcionar, precisa de ativar as políticas, tal como isto:
 Before any command line policies will work, you need to enable policies like this:
 ```bash
 sudo defaults write /Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
